@@ -40,6 +40,18 @@ res.render('home.hbs', {
 });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'My portfilio',
+  });
+});
+
+app.get('/portfilio', (req, res) => {
+  res.render('portfilio.hbs', {
+    pageTitle: 'projects',
+  });
+});
+
 
 app.get('/About', (req, res) => {
   res.render('about.hbs', {
